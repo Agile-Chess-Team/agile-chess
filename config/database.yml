@@ -2,6 +2,9 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
 
 development:
   <<: *default
@@ -15,3 +18,6 @@ test:
 production:
   <<: *default
   database: agile-chess_production
+
+  # username: agile-chess
+  # password: <%= ENV['AGILE-CHESS_DATABASE_PASSWORD'] %>
