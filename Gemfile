@@ -68,6 +68,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'simple_form'
 gem 'devise'
 
-gem 'react-rails'
+gem 'react_on_rails', '11.1.4'
 
 
